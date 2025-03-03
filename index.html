@@ -1,59 +1,66 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>텍스트 입력 페이지</title>
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      font-family: Arial, sans-serif;
-      margin: 30px;
-    }
-    .container {
-      position: relative;
-      width: 100%;
-      max-width: 600px;
-    }
-    .background-image {
-      width: 100%;
-      display: block;
-    }
-    .text-box {
-      position: absolute;
-      top: 40%; /* 이미지에서의 위치 조정 */
-      left: 67%;
-      transform: translate(-50%, -50%);
-      padding: 10px;
-      font-size: 18px;
-      width: 200px;
-      border: 2px solid #888;
-      border-radius: 8px;
-    }
-    .footer {
-      margin-top: 30px;
-      font-size: 12px;
-      color: #888;
-      font-style: italic;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퍼즐 동아리 가입 안내</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 14px;
+            color: gray;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+        .form-container {
+            border: 2px solid #000;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .input-box {
+            margin-top: 10px;
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .footer {
+            font-size: 12px;
+            margin-top: 20px;
+            color: gray;
+        }
+    </style>
 </head>
 <body>
-  <h2>📌 퍼즐 동아리 가입 안내</h2>
-  <p> 어쩐 일로 우리 동아리를 찾으시는지는 모르지만...<br>
-동아리 위치는 퍼즐로 알려드릴게요.<br>
-<br>
-'념주십관년기육 비층일로 왼편'<br>
-<br> </p>
-
-  <div class="container">
-    <img src="https://i.ibb.co/Mk75D2pJ/001-1.jpg" alt="001-1" border="0">
-    <input type="text" class="text-box" placeholder="이름 입력">
-  </div>
-
-  <div class="footer">
-    * &lt;안녕?인하대학교&gt; 진행 중입니다. 자세한 내용은 @hi_inhauniv를 참고해주세요.
-  </div>
+    <div class="title">📌 퍼즐 동아리 가입 안내</div>
+    <div class="subtitle">
+        어떤 일로 우리 동아리를 찾으시는지는 모르지만...<br>
+        동아리 위치는 퍼즐을 알려드릴게요.<br>
+        <br>
+        '념주십관년기육 비층일로 왼편'
+    </div>
+    
+    <h2>퍼즐 동아리 입부 지원서</h2>
+    <div class="form-container">
+        <label for="name">지원자</label>
+        <input type="text" id="name" class="input-box" placeholder="이름 입력">
+    </div>
+    
+    <p>인하대학교 전설의 동아리,<br>퍼즐 동아리에 입부를 희망합니다.</p>
+    <p>2025년 3월</p>
+    
+    <div class="footer">
+        * &lt;안녕? 인하대학교&gt; 진행 중입니다. 자세한 내용은 @hi_inhauniv 를 참고해주세요.
+    </div>
 </body>
 </html>
